@@ -1,4 +1,3 @@
-#from matplotlib.figure import Figure
 import matplotlib.pyplot as plt
 import numpy as np
 import random
@@ -6,7 +5,7 @@ import random
 
 
 def uniform_dataset(words,weightList):
-    size = 100
+    size = 1000000
     x=np.random.uniform(30.0273437,60.02734375,size)
     y=np.random.uniform(35.87531083569679,45.87531083569679,size)
     visualization(x,y)
@@ -16,7 +15,7 @@ def uniform_dataset(words,weightList):
 def non_uniform_dataset(words,weightList):
 
     clusters = 5
-    size = 30
+    size = 1000000
     
     x_center = [30.02734375,40.02734375,50.02734375,60.02734375,70.02734375]
 
